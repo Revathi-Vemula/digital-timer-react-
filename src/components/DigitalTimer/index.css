@@ -1,0 +1,207 @@
+.background-timer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 10px;
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #cffcf1,
+    #cffcf1,
+    #defafe
+  );
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .background-timer-container {
+    background-image: linear-gradient(
+      to right,
+      #ffffff,
+      #cffcf1,
+      #cffcf1,
+      #defafe
+    );
+  }
+}
+
+.heading {
+  font-size: 25px;
+  font-family: 'Consolas';
+  color: #1e293b;
+  font-weight: 800;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 40px;
+  }
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .timer-container {
+    flex-direction: row;
+  }
+}
+
+.elapsed-bg-container {
+  min-height: 300px;
+  min-width: 300px;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .elapsed-bg-container {
+    min-height: 480px;
+    min-width: 480px;
+  }
+}
+
+.timer-bg {
+  background-color: #ffffff;
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .timer-bg {
+    height: 180px;
+    width: 180px;
+  }
+}
+
+.time {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-family: 'Consolas';
+  font-size: 25px;
+  color: #00d9f5;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 768px) {
+  .time {
+    font-size: 30px;
+  }
+  .timer-status {
+    font-size: 25px;
+  }
+}
+
+.timer-status {
+  margin-top: 0px;
+  font-family: 'Consolas';
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.timer-controls-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .timer-controls-container {
+    margin-left: 80px;
+  }
+}
+
+.play-pause-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.btn {
+  background-color: transparent;
+  border-style: none;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  outline: none;
+}
+
+.play-pause-img {
+  height: 30px;
+  width: 30px;
+  margin-top: 0;
+}
+
+.control-name {
+  font-size: 25px;
+  font-family: 'Consolas';
+  font-weight: 800;
+  margin-top: 0;
+  margin-left: 5px;
+}
+
+.timer-increase-decrease-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.instruction {
+  font-size: 18px;
+  font-weight: 800;
+  font-family: 'Consolas';
+  margin-bottom: 0;
+}
+
+.increment-decrement-btn {
+  background-color: transparent;
+  font-size: 30px;
+  font-weight: 600;
+  border-style: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.timer-limit {
+  background-image: linear-gradient(
+    to right,
+    #00d9f5 0.3%,
+    #cffcf1 0.3%,
+    #00d9f5,
+    #cffcf1 0.3%,
+    #00d9f5
+  );
+  width: 80px;
+  height: 40px;
+  border-radius: 15px;
+  font-family: 'Consolas';
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  padding: 5px;
+}
